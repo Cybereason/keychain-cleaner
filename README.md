@@ -14,7 +14,7 @@ On any pervious OS (or need to be backwards compatible with such OS), feel free 
 
 - Many of the answers we found online suggested deleting of the private key via the Keychain Access UI (which does not align with any automation process, and is not acceptable for any application that should manage its installation / upgrade process) or just leave the private key dangled behind, which can result in many unused keys wandering around the keychain desert for all eternity, but can also cause unintended and unapproved 're-use' for the key.
 
-- When deleting a 'trusted' certificate, this tool will also remove the related trust object (this functionality can be achieved also using the 'security' cmd).
+- When deleting a 'trusted' certificate, this tool will also remove the related trust object (not failing in case of failure, but displays a relevant error message). This functionality can be achieved also using the 'security' cmd.
 
 # Usage
 - Run as root ('sudo')
